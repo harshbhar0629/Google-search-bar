@@ -11,17 +11,19 @@
 		<style>
 			
 			#search-bar {
-                width: 300px;
-				padding: 10px;
+                width: 97.5%;
+				padding: 14px;
+				font-size: 1.1rem;
 				border: 1px solid #ccc;
-				border-radius: 4px;
-				margin-bottom: 10px;
+				border-radius: 10px;
+				margin-bottom: 1px;
 			}
 			#suggestions {
 				border: 1px solid #ccc;
-				max-height: 150px;
+				max-height: 200px;
 				overflow-y: auto;
-				border-radius: 4px;
+				border-radius: 10px;
+				width: 100%;
 				display: none;
 			}
 			#suggestions div {
@@ -33,13 +35,14 @@
 			}
 		</style>
 	</head>
-	<body style="width: 90vw; height: 90vh;">
+	<body style="width: 95vw; height: 90vh;">
+		<h2 style="text-align: center;">Google Search Bar</h2>
 		<input
 			type="text"
 			id="search-bar"
 			placeholder="Search..."
 			oninput="showSuggestions()" />
-		<div id="suggestions"></div>
+		<div id="suggestions" ></div>
 		<div
 			class="divi"
             style="display: none;"
